@@ -1,0 +1,43 @@
+.outbox {
+    background-color: antiquewhite;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    height: auto;
+    width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid black;
+    background-color: lightblue;
+}
+
+.blockone {
+    margin-bottom: 20px;
+}
+
+.blocktwo {
+    margin-left: 195px;
+    margin-top: -135px;
+}
+
+.submit {
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 350px;
+    height: 35px;
+    margin-top: 10px;
+    margin-left: 25px;
+    color: white;
+    border: none;
+}
+
+.submit:hover {
+    background-color: #457fa0;
+}

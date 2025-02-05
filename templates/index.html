@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</head>
+<body>
+    <div class="outbox">
+        <div class="container">
+            <h2>Registration</h2>
+            <form id="registrationForm">
+                <div class="blockone">
+                    <label for="fullname">Full Name</label>
+                    <br>
+                    <input type="text" id="fullname" name="fullname" placeholder="Enter your name" required pattern="[A-Za-z ]+" title="Name should only contain letters and spaces.">
+                    <br>
+                    <label for="email">Email</label>
+                    <br>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    <br>
+                    <label for="password">Password</label>
+                    <br>
+                    <input type="password" id="password" name="password" placeholder="Enter your password" required minlength="8" title="Password must be at least 8 characters long.">
+                    <br>
+                </div>
+
+                <div class="blocktwo">
+                    <label for="username">Username</label>
+                    <br>
+                    <input type="text" id="username" name="username" placeholder="Enter your username" required>
+                    <br>
+                    <label for="phone">Phone Number</label>
+                    <br>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required pattern="[0-9]{10}" title="Phone number must be exactly 10 digits.">
+                    <br>
+                    <label for="confirm_password">Confirm Password</label>
+                    <br>
+                    <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirm your password" required>
+                    <br>
+                </div>
+
+                <b>Gender</b>
+                <br>
+                <input type="radio" id="male" name="gender" value="Male" required>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="Female" required>
+                <label for="female">Female</label>
+                <input type="radio" id="prefer" name="gender" value="Prefer not to say" required>
+                <label for="prefer">Prefer not to say</label>
+                <br>
+
+                <button class="submit" type="submit">Register</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
